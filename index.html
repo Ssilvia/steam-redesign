@@ -9,64 +9,61 @@
   <body>
 
     <header class="site-header">
-      <nav class="navbar navbar-expand-md navbar-dark bg-dark" aria-label="Fourth navbar example">
+      <nav class="navbar navbar-expand-md navbar-dark" aria-label="Fourth navbar example">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">STEAM</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="navbarsExample04">
+      <div class="collapse navbar-collapse" id="mainMenu">
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="#Store" title="Store">Store</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="#Community" title="Community">Community</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            <a class="nav-link" href="#About" title="About">About</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
-            <ul class="dropdown-menu" aria-labelledby="dropdown04">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
+          <li class="nav-item">
+            <a class="nav-link" href="#Support" title="Support">Support</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-sm text-white border-0 btn-primary" href="#Install" title="Download Steam to Install">Install Steam</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Login" title="Login">Login</a>
           </li>
         </ul>
-        <form>
-          <input class="form-control" type="text" placeholder="Search" aria-label="Search">
-        </form>
       </div>
     </div>
   </nav>
     </header>
 
     <main class="main-content">
-      <div class="hero hero--gradient-blue pt-5 pb-5">
-
-        <section class="hero__slider js-hero-slider">
+      <section id="Hero" class="hero hero--gradient-blue pt-5 pb-5">
+        <div class="hero__slider js-hero-slider mt-2">
           <div class="hero__slider__slide">
             <div class="container">
               <div class="row">
                 <div class="col-12 col-md-7 col-lg-6">
-                  <h1 class="hero__slider__slide__title text-white">Gaming Reimaginaged</h1>
+                  <h1 class="hero__slider__slide__title text-white mt-4">Gaming Re-Imagined</h1>
                   <p class="hero__slider__slide__subtitle text-white">Newly released this month, checkout the system’s latest upgrades available for your Virtual Reality games and sets.</p>
+                  <a href="#" class="btn btn-sm btn-outline-light">Unlock Your Gaming Potential</a>
                 </div>
               </div>
             </div>
           </div>
-        </section>
-
-      </div>
+        </div>
+      </section>
 
       <div class="container">
-        <section class="bg-secondary p-3 rounded">
+        <section id="FilterBar" class="filter-bar position-relative bg-secondary p-3 rounded">
           <div class="row">
             <div class="col-12 col-lg-3">
-              <input type="text" placeholder="Search.." class="form-control" />
+              <input type="text" placeholder="Search.." class="form-control w-100" />
             </div>
             <div class="col-12 col-lg-9">
               <nav class="secondary-nav">
@@ -83,16 +80,85 @@
                   <li class="secondary-nav__menu-item list-unstyled">
                     <a href="#" class="secondary-nav__menu-item__link text-white text-decoration-none">Points Shop</a>
                   </li>
-
+                  <li class="secondary-nav__menu-item list-unstyled">
+                    <a href="#" class="secondary-nav__menu-item__link text-white text-decoration-none">News</a>
+                  </li>
+                  <li class="secondary-nav__menu-item list-unstyled">
+                    <a href="#" class="secondary-nav__menu-item__link text-white text-decoration-none">Lab</a>
+                  </li>
                 </ul>
               </nav>
             </div>
           </div>
         </section>
       </div>
+
+      <div class="bg-dark-gray position-relative py-5 raised-section">
+
+        <div class="container">
+          <section id="SpecialOffers" class="mt-3">
+            <h4 class="h6 text-uppercase">Special Offers</h4>
+            <a class="float-end btn btn-sm btn-outline-light">Browse All</a>
+            <div class="py-3">
+              <div class="js-slider">
+                <div class="slide">
+                  <div class="row">
+                    <div class="col-12 col-md-7">
+                      2 columns
+                    </div>
+                    <div class="col-12 col-md-5">
+                      2 rows
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="Ads" class="mt-4">
+            <h4 class="h6 text-uppercase">Steam-Exclusive Products</h4>
+            <a class="float-end btn btn-sm btn-outline-light">Browse All</a>
+            <div class="row my-3">
+                <div class="col-12 col-md-6">
+                  <div class="ad hero--gradient-blue overflow-hidden pr-4 py-3 position-relative rounded">
+                    <h6 class="ad__subtitle text-primary text-uppercase">Pre-Order Now</h6>
+                    <h4 class="ad__title"><a href="#" class="stretched-link text-white text-decoration-none">Steam Deck</a></h4>
+                    <p class="ad__text mb-0">Steam Deck is available to reserve now in select regions, and will begin shipping in December 2021.</p>
+                    <img src="#" alt="Ad's product image" class="ad__img position-absolute"/>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="ad hero--gradient-blue overflow-hidden pr-4 py-3 position-relative rounded">
+                    <h6 class="ad__subtitle text-primary text-uppercase">Introducing</h6>
+                    <h4 class="ad__title"><a href="#" class="stretched-link text-white text-decoration-none">Valve Index VR Kit</a></h4>
+                    <p class="ad__text mb-0">Experience high fidelity virtual reality with the Valve Index VR Kit. Bonuses for customers who pre-purchase.</p>
+                    <img src="#" alt="Ad's product image" class="ad__img position-absolute"/>
+                  </div>
+                </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+
     </main>
 
-    <footer class="site-footer">
+    <footer class="site-footer bg-black py-5">
+      <div class="container">
+        <div class="mx-auto text-center">
+          <a href="#Home" class="site-footer__logo">
+            <img src="#" alt="Steam Logo" class="site-footer__logo__img"/>
+          </a>
+          <ul class="site-footer__menu">
+            <li class="site-footer__menu__item list-unstyled"><a href="#URL" class="text-white text-decoration-none">About</a></li>
+            <li class="site-footer__menu__item list-unstyled"><a href="#URL" class="text-white text-decoration-none">Steamworks</a></li>
+            <li class="site-footer__menu__item list-unstyled"><a href="#URL" class="text-white text-decoration-none">Jobs</a></li>
+            <li class="site-footer__menu__item list-unstyled"><a href="#URL" class="text-white text-decoration-none">Steam Distribution</a></li>
+            <li class="site-footer__menu__item list-unstyled"><a href="#URL" class="text-white text-decoration-none">Gift Cards</a></li>
+          </ul>
+          <p class="text-white fw-lighter">© 2021 Valve Corporation. All rights reserved.</p>
+        </div>
+      </div>
     </footer>
 
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
