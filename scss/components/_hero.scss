@@ -1,19 +1,19 @@
 .hero--gradient-blue {
-  background: transparent linear-gradient(180deg, #192F58 0%, #050912 100%) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(180deg, #192f58 0%, #050912 100%) 0% 0% no-repeat padding-box;
 }
 
 .secondary-nav {
   &__menu-item {
     display: block;
 
-    @media(min-width:768px){
+    @include media-breakpoint-up(md) {
       display: inline-block;
     }
   }
 }
 
 .bg-dark-gray {
-  background-color: #333333;
+  background-color: #333;
 }
 
 .filter-bar {
@@ -21,25 +21,25 @@
 }
 
 .raised-section {
-  margin-top: -2rem;
   z-index: 1;
+  margin-top: -2rem;
 }
 
 /** Ads */
 .ad {
   padding-left: 5rem;
 
-  @media(min-width:768px){
+  @include media-breakpoint-up(md) {
     padding-left: 10rem;
   }
 
   &__img {
-    left: 0;
     top: 0;
-    height: auto;
+    left: 0;
     width: 4rem;
+    height: auto;
 
-    @media(min-width:768px){
+    @include media-breakpoint-up(md) {
       width: 9rem;
     }
   }
